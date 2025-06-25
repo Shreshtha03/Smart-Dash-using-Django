@@ -1,0 +1,246 @@
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 33px;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 60% 40%, #43cea2 0%, #185a9d 60%, #051118 100%);
+  background-attachment: fixed;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  color: #f8f8f8;
+  letter-spacing: 0.04em;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.card {
+  border: 1px solid #222;
+  width: 264px;
+  height: 144px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 4.5px 15px rgba(0,0,0,0.18);
+  text-align: center;
+  padding: 21px 12px 12px 12px;
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px;
+}
+
+.card:hover .edit {
+  display: block; /* Show on card hover */
+}
+
+.edit {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #2196f3;
+  color: #fff;
+  padding: 7.5px 15px;
+  border-radius: 7.5px;
+  font-size: 16.5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.edit:hover {
+  background: #1769aa;
+}
+
+.value {
+  font-size: 28.5px;
+  margin-top: 19.5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.graphs {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+  width: 97%;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.graph-container {
+  position: relative;
+  width: 49%;
+  max-width: 700px;
+  height: 300px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.graph-container:hover .edit {
+  display: block; /* Show on graph hover */
+}
+
+.graphs-canvas {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.graph-container:hover {
+  box-shadow: 0 4.5px 28.5px rgba(0,0,0,0.25);
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+.pie-charts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  flex-wrap: wrap;
+  width: 97%;
+  margin: 24px auto 0;
+  box-sizing: border-box;
+}
+
+.pie-container {
+  position: relative;
+  max-width: 280px;
+  max-height: 280px;
+  margin: 12px;
+  box-sizing: border-box;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-container:hover .edit {
+  display: block; /* Show on pie hover */
+}
+
+.pie-canvas {
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+}
+
+.pie-container:hover {
+  box-shadow: 0 4.5px 28.5px rgba(0,0,0,0.25);
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom legend styles */
+.pie-chart-with-legend {
+    display: flex;
+    align-items: center;
+}
+
+.legend {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.legend-label {
+    font-size: 14px;
+    color: white;
+}

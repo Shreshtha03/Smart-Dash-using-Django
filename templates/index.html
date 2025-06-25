@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" defer></script>
+
+
+</head>
+<body>
+    <div class="dashboard">
+        <div class="card" id="card-1" data-card-id="card-1" data-equipment="temperature">
+            <div class="label">Temperature</div>
+            <div class="value">25°C</div>
+            <div class="edit" onclick="window.location.href='/dashboard/edit?card=card-1&equipment=temperature'">Edit</div>
+        </div>
+        <div class="card" id="card-2" data-card-id="card-2" data-equipment="humidity">
+            <div class="label">Humidity</div>
+            <div class="value">60%</div>
+            <div class="edit" onclick="window.location.href='/dashboard/edit?card=card-2&equipment=humidity'">Edit</div>
+        </div>
+        <div class="card" id="card-3" data-card-id="card-3" data-equipment="voltage">
+            <div class="label">Voltage</div>
+            <div class="value">220V</div>
+            <div class="edit" onclick="window.location.href='/dashboard/edit?card=card-3&equipment=voltage'">Edit</div>
+        </div>
+        <div class="card" id="card-4" data-card-id="card-4" data-equipment="current">
+            <div class="label">Current</div>
+            <div class="value">5A</div>
+            <div class="edit" onclick="window.location.href='/dashboard/edit?card=card-4&equipment=current'">Edit</div>
+        </div>
+    </div>
+    <div class="graphs">
+        <div class="graph-container">
+            <canvas id="myChart1" class="graphs-canvas"></canvas>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+        <div class="graph-container">
+            <canvas id="myChart2" class="graphs-canvas"></canvas>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+    </div>
+    <div class="pie-charts">
+        <div class="pie-container">
+            <canvas id="pieDaily" class="pie-canvas"></canvas>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+        <div class="pie-container">
+            <canvas id="pieWeekly" class="pie-canvas"></canvas>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+        <div class="pie-container">
+            <canvas id="pieMonthly" class="pie-canvas"></canvas>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+        <div class="pie-container">
+            <canvas id="pieYearly" class="pie-canvas"></canvas>
+              <div class="legend" id="legendYearly"></div>
+            <div class="edit" onclick="window.location.href='/dashboard/edit'">Edit</div>
+        </div>
+    </div>
+    <script src="{% static 'first.js' %}"></script>
+    <script src="{% static 'chart1.js' %}"></script>
+    <script src="{% static 'chart2.js' %}"></script>
+    <script src="{% static 'piechart.js' %}"></script>
+</body>
+</html>
