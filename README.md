@@ -22,7 +22,7 @@ A dynamic and interactive dashboard application designed to monitor and visualiz
 Clone the project to your local machine:
 
 
-git clone https://github.com/your-username/SmartDash.git
+git clone https://github.com/Shreshtha03/SmartDash.git
 cd SmartDash
 2. Set Up Backend (Django)
 Create and activate a virtual environment:
@@ -102,7 +102,7 @@ Collapse
 
 Wrap
 
-Copy
+bash``
 SmartDash/
 ├── dashboard/
 │   ├── static/
@@ -118,7 +118,9 @@ SmartDash/
 Contributing
 Fork the repository.
 Create a new branch for your feature:
-bash
+
+
+
 
 Collapse
 
