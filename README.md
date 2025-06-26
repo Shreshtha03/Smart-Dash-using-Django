@@ -116,7 +116,7 @@ This project is licensed under the MIT License. See the `LICENSE.md` file for de
 
 ## Screenshots
 To be added once the dashboard is fully styled.
-- **Dashboard Overview**: <img src="screentshot/Dashboard img.png
+- **Dashboard Overview**: <img src="screentshot/dashboard.png
 " alt="Dashboard Overview">
 - **Django admin**: <img src="![admin img](https://github.com/user-attachments/assets/09d8238e-1d1f-4105-864d-28ca3c5738fb)
 ![admin img](https://github.com/user-attachments/assets/09d8238e-1d1f-4105-864d-28ca3c5738fb)
