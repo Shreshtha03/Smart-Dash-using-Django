@@ -20,7 +20,8 @@ A dynamic and interactive dashboard application designed to monitor and visualiz
 
 ### 1. Clone the Repository
 Clone the project to your local machine:
-```bash
+
+
 git clone https://github.com/your-username/SmartDash.git
 cd SmartDash
 2. Set Up Backend (Django)
