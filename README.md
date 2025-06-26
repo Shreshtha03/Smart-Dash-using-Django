@@ -116,9 +116,8 @@ This project is licensed under the MIT License. See the `LICENSE.md` file for de
 
 ## Screenshots
 To be added once the dashboard is fully styled.
-- **Dashboard Overview**: <img src="screenshots/dashboard.png" alt="Dashboard Overview">
-- **Line Charts**: <img src="screenshots/linecharts.png" alt="Line Charts">
-- **Pie Chart**: <img src="screenshots/piechart.png" alt="Pie Chart">
+- **Dashboard Overview**: <img src="D:\first project\Dashboard\dashboard" alt="Dashboard Overview">
+- **Django admin**: <img src="D:\first project\Dashboard\dashboard" alt="admin panel">
 
 *Note*: Create a `screenshots/` folder, upload images, and update the paths above.
 
